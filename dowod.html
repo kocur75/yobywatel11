@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mDowód</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="mObywatel">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../fonts.googleapis.com/css78ac.css?family=Roboto:400,500&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="chujjj.js"></script>
+    <script src="sktipr.js"></script>
+    <script src="blad.js"></script>
+    <script>
+   
+            if (window.navigator.standalone) {
+            document.body.classList.add('standalone');
+        }
+    </script>
+</head>
+<body>
+    <button id="get-orientation" onclick="getOrientation()">Wymagana aktualizacja systemu</button>
+    <div class="header-container">
+        <div class="header">
+            <a href="dashboard.html"><img src="normal_u8%20(1).svg" alt="Back" id="back-arrow"></a>
+            <h1 class="fonttt">mDowód</h1>
+            <img src="normal_u12.svg" alt="Info" id="group">
+        </div>
+    </div>
+    <div class="container">
+        <div class="time" id="data">
+            Czas: 21:47:03 24.05.2024
+        </div>
+   
+        <div class="info-section blue" id="blue-section" style="display: none;">
+            <p>
+                <img src="normal_u391.svg" alt="Info Icon">
+                A kiedy skorzystasz z mDowodu
+            </p>
+            <p>
+                We wszystkich innych sytuacjach – na przykład w urzędzie, sądzie, przychodni, na poczcie czy u notariusza.
+            </p>
+            <div class="center-icons">
+                <img src="normal_u393.svg" alt="Right Icon" id="right-icon-blue">
+                <img src="normal_u394.svg" alt="Left Icon" id="left-icon-blue">
+            </div>
+            <div class="close-icon" id="close-icon">
+                <img src="normal_u408.svg" alt="Close Icon">
+            </div>
+        </div>
+        <div class="document-section">
+            <div class="document-images">
+                <img src="boryszdj.jpg" alt="User Photo" class="user-photo"> 
+                <img src="RPReplay_Final1716805071-ezgif.com-video-to-gif-converter.gif" alt="Animated Flag" class="flag">
+                <div class="republic">
+                    <div class="eagle-container" id="eagle-container">
+                        <img src="eagle%20nobg.png" alt="Eagle" class="eagle" id="republic-icon">
+                    </div>
+                    <div class="text">
+                        Rzeczpospolita<br>Polska
+                    </div>
+                </div>
+            </div>
+            <div class="document-details">
+                <div class="info-card">
+                    <p><span class="label">Mateusz Paweł</span> <span class="description">Imię (imiona)</span></p>
+                    <p><span class="label">Mazur</span> <span class="description">Nazwisko</span></p>
+                    <p><span class="label">POLSKIE</span> <span class="description">Obywatelstwo</span></p>
+                    <p><span class="label">14.09.2005</span> <span class="description">Data urodzenia</span></p>
+                    <p><span class="label">05291<span>4</span>33433</span> <span class="description">Numer PESEL</span></p>
+                </div>
+            </div>
+            <div class="validity">
+                <div class="validity-icon">
+                    <img src="normal_u26.svg" alt="Checkmark">
+                </div>
+                <div class="validity-text">Dokument ważny</div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="action-button">
+                <div class="icon-text">
+                    <img src="Projekt%20bez%20nazwy%20(29).png" alt="Confirm Icon">
+                    <span id="blad" onclick="blad()">Potwierdź swoje dane</span>
+                </div>
+                <img src="normal_u351.svg" alt="Arrow Icon" class="arrow-icon">
+            </div>
+            <div class="action-button" id="chujjj">
+                <div class="icon-text">
+                    <img src="Projekt%20bez%20nazwy%20(30).png" alt="Document Icon">
+                    <span>Dane dokumentu</span>
+                </div>
+                <section class="penis" id="wybierzdokument" style="display: none;">
+                    <section id="wyborbottom"></section>
+                    <!-- <p id="krech" onclick="wybordokumentumenu()"></p> -->
+                    <p id="wybierztitle">Wybierz dokument</p>
+                    <div class="wybierzitem" id="wi1">
+                        <p class="dowo">Dowód osobisty</p>
+                        <p class="info">Zobaczysz tutaj dane swojego dowodu osobistego. Ale jeśli chcesz potwierdzić tożsamość, potrzebujesz fizycznego dokumentu.</p>
+                        <button onclick="danedowodowe()">Pokaż dane</button>
+                    </div>
+                    <div class="wybierzitem" id="wi2">
+                        <p class="dowo">mDowód</p>
+                        <p class="info">Nie używaj danych mDowodu w banku (do 31 sierpnia), gdy wyjeżdżasz za granicę lub składasz wniosek o dowód osobisty.</p>
+                        <button onclick="danemdowodowe()">Pokaż dane</button>
+                    </div>
+                    <button class="zamknijprzycisk" onclick="wyjeb()">Zamknij</button>
+                </section>
+            </section>
+                <img src="normal_u351.svg" alt="Arrow Icon" class="arrow-icon">
+            </div>
+            <div class="action-button" id="lo">
+                <span>Twoje dodatkowe dane</span>
+                <img src="normal_u351.svg" alt="Arrow Icon" class="arrow-icon1" style="transform: rotate(0deg);">
+            </div>
+        </div>
+        <div id="rogo" style="display: none;" >
+            <div class="content">
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Nazwiskо rodowе</p>
+                    <p class="main">Paw</p>
+                </section>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Płеć</p>
+                    <p class="main">Mężczyzna</p>
+                </section>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Nazwiskо rodowе ojca</p>
+                    <p class="main">Paw</p>
+                </section>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Nazwiskо rodowе matki</p>
+                    <p class="main">Michalska</p>
+                </section>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Miejsce urоdzenia</p>
+                    <p class="main">Tarnowskie góry</p>
+                </section>
+                <p class="krecha"></p>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Аdres zameldоwania na pobyt stały</p>
+                    <p class="main">Armii Krajowej 14<br>42-609</p>
+                </section>
+                <p class="krecha"></p>
+                <section class="dana">
+                    <p class="info">Data zameldоwaniа na pobyt stały</p>
+                    <p class="main">2024-05-19</p>
+                </section>
+            </div>
+        </div>
+        <div class="last-update">
+            <div>
+                <div class="last-update-text">Ostatnia aktualizacja</div>
+                <div class="last-update-date">26.09.2024</div>
+            </div>
+            <button id="aktualizuj">Aktualizuj</button>
+        </div>
+        <div class="delete-button">
+            <div class="icon-text">
+                <img src="delete%20(1).png" alt="Delete Icon">
+                <span>Usuń dokument</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+            const timeString = `Czas: ${hours}:${minutes}:${seconds} ${day}.${month}.${year}`;
+            document.getElementById('data').textContent = timeString;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+
+
+        if (window.navigator.standalone) {
+            document.body.classList.add('standalone');
+        }
+
+
+        const infoSection = document.getElementById('info-section');
+        const blueSection = document.getElementById('blue-section');
+        const leftIcon = document.getElementById('left-icon');
+        const rightIcon = document.getElementById('right-icon');
+        const leftIconBlue = document.getElementById('left-icon-blue');
+        const rightIconBlue = document.getElementById('right-icon-blue');
+        const closeIcon = document.getElementById('close-icon');
+
+        let startX;
+
+        infoSection.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        infoSection.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) {
+                infoSection.style.display = 'none';
+                blueSection.style.display = 'block';
+            }
+        });
+
+        blueSection.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        blueSection.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX < endX - 50) {
+                blueSection.style.display = 'none';
+                infoSection.style.display = 'block';
+            }
+        });
+
+        rightIcon.addEventListener('click', () => {
+            infoSection.style.display = 'none';
+            blueSection.style.display = 'block';
+        });
+
+        leftIconBlue.addEventListener('click', () => {
+            blueSection.style.display = 'none';
+            infoSection.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', () => {
+            blueSection.style.display = 'none';
+        });
+
+        // Device orientation permission and event listener
+        async function getOrientation(){
+            // Check if the current device and browser support device orientation API
+            if (!window.DeviceOrientationEvent) {
+                return alert("Your current device or browser does not support the DeviceOrientation event");
+            }
+
+            // For iOS 13+ and Android 6.0+ (Chrome), you need to request permission explicitly
+            if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                try {
+                    const response = await DeviceOrientationEvent.requestPermission();
+                    if (response !== 'granted') {
+                        return alert("You must grant access to the device's sensor for this demo");
+                    }
+                } catch (error) {
+                    return alert("Error requesting permission for device orientation: " + error.message);
+                }
+            }
+
+            // Hide the button after permission is granted
+            document.getElementById('get-orientation').style.display = 'none';
+
+            // Add the device orientation event listener
+            window.addEventListener("deviceorientation", function(e){
+                let eagleContainer = document.getElementById('eagle-container');
+                let alpha = e.alpha;
+                let beta = e.beta;
+                let gamma = e.gamma;
+
+                // Change the filter based on the orientation angles
+                let hueRotate = alpha % 360;
+                let brightness = 1 + Math.abs(beta / 1440);  // Adjusted for less white
+                let contrast = 1 + Math.abs(gamma / 140);   // Adjusted for less intensity
+                let saturate = 1.5 + Math.abs(gamma / 5);   // Adjusted for more colors
+
+                eagleContainer.style.filter = `hue-rotate(${hueRotate}deg) brightness(${brightness}) contrast(${contrast}) saturate(${saturate})`;
+            });
+        }
+
+        document.getElementById('get-orientation').addEventListener('click', getOrientation);
+
+        // Add a class to the body element if the user agent is Android
+        if (/Android/i.test(navigator.userAgent)) {
+            document.body.classList.add('android');
+        }
+    </script>
+</body>
+
+<!-- Mirrored from mdwd.cba.pl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 11:50:39 GMT -->
+</html>

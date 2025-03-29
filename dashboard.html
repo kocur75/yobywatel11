@@ -1,0 +1,219 @@
+<html>
+
+<head>
+    <script src="sw.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OG Obywatel</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#fff">
+    <meta name="next-head-count" content="5">
+    <link rel="preload" href="main.css" as="style">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="main.css" data-n-g="">
+    <link rel="manifest" href="manifest.json">
+
+    <noscript data-n-css=""></noscript>
+    <style>
+        body {
+            overscroll-behavior: contain;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .dzit {
+                margin-bottom: 1.0rem;
+            }
+        }
+
+        .photo {
+            position: relative;
+            filter: grayscale(100%);
+            z-index: 1;
+            display: block;
+        }
+
+        #gradient {
+            position: relative;
+            bottom: 10px;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+            color: #f1f1f1;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            padding: 6px;
+            text-align: center;
+            z-index: 2;
+            border-radius: 0 0 0.5rem 0.5rem;
+            margin: 0;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style><link rel="stylesheet" href="dashboard.css">
+<script src="scale.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="inicjaly">
+                        <p id="inicjaly-p">MM</p>
+        </div>
+        <div id="dzwonek">
+            <img src="dzwonek_dot.svg" alt="kropka" id="kropka">
+            <img src="dzwonek.svg" alt="dzwoneczek" id="dzwoneczek">
+            <img src="dzwonek_bottom.svg" alt="dzwonek_bottom" id="dzwonek_bottom">
+        </div>
+    </header>
+    <section id="dokumenty">
+        <p id="tekst-dok">Dokumenty</p>
+        <section id="buttons">
+            <button id="dodaj">Dodaj</button>
+            <button id="wszystkie">Wszystkie</button>
+        </section>
+    </section>
+    <section id="wybor-p">
+        <a class="id-card" href="dowod.html">
+            <img src="personicon.svg" alt="icon" class="id-card-icon">
+            <img class="id-card-top" src="cardbg1.svg">
+            <div class="id-card-bottom">
+                <p>mDowód</p>
+                <img src="arrow.svg" alt="arrow">
+            </div>
+    </a>
+        <a class="id-card" href="#">
+            <img src="steering_wheel-icon.svg" alt="icon" class="id-card-icon">
+            <img class="id-card-top" src="cardbg2.svg">
+            <div class="id-card-bottom">
+                <p>Prawo jazdy</p>
+                <img src="arrow.svg" alt="arrow">
+            </div>
+        </a>
+    </section>
+    <section id="dokumenty">
+        <p id="tekst-dok">Usługi</p>
+        <section id="buttons">
+            <button id="wszystkie">Wszystkie</button>
+        </section>
+    </section>
+    <main>
+        <div class="usluga">
+            <button class="przycisk">
+                <div id="cap">
+                    <img src="cap3.svg" alt="cap" id="cap1">
+                    <img src="cap2.svg" alt="cap" id="cap2">
+                    <img src="cap5.svg" alt="cap" id="cap3">
+                    <img src="cap4.svg" alt="cap" id="cap4">
+                    <img src="cap1.svg" alt="cap" id="cap5">
+                </div>
+            </button>
+            <p class="usluga-tekst">Punkty karne</p>
+        </div>
+        <div class="usluga">
+            <button class="przycisk">
+                <div id="srod">
+                    <img src="srod1.svg" alt="srodowiskoikona1" id="srod1">
+                    <img src="srod2.svg" alt="srodowiskoikona1" id="srod2">
+                </div>
+            </button>
+            <p class="usluga-tekst">Naruszenie środowiskowe</p>
+        </div>
+        <div class="usluga">
+            <button class="przycisk" id="bus">
+                <img src="buslogo.svg" alt="buslogo">
+            </button>
+            <p class="usluga-tekst">Bezpieczny autobus</p>
+        </div>
+    </main>
+    <main>
+        <div class="usluga">
+            <button class="przycisk center">
+                <img src="samolotlogo.svg" alt="samolotlogo">
+            </button>
+            <p class="usluga-tekst">Polak<br>za granicą</p>
+        </div>
+        <div class="usluga">
+            <button class="przycisk center">
+                <img src="bilkomlogo.svg" alt="bilkomlogo">
+            </button>
+            <p class="usluga-tekst">Bilkom</p>
+        </div>
+        <div class="usluga">
+            <button class="przycisk center">
+                <img src="pesellogo.svg" alt="pesellogo">
+            </button>
+            <p class="usluga-tekst">Zastrzeż PESEL</p>
+        </div>
+    </main>
+    <footer>
+        <section class="witam">
+            <button class="wyborobecny">
+                <img src="house.svg" alt="house" class="house">
+            </button>
+            <p>Start</p>
+        </section>
+        <section class="witam">
+            <button class="wybor">
+                <div id="dok">
+                    <img src="dok1.svg" alt="dok1" id="dok1">
+                    <img src="dok2.svg" alt="dok2" id="dok2">
+                    <img src="dok3.svg" alt="dok3" id="dok3">
+                </div>
+            </button>
+            <p>Dokumenty</p>
+        </section>
+        <section class="witam">
+            <button class="wybor">
+                <img src="folder.svg" alt="folder" class="folder">
+            </button>
+            <p>Usługi</p>
+        </section>
+        <section class="witam">
+            <button class="wybor">
+                <div id="kod">
+                    <img src="kod1.svg" alt="kod1" id="kod1">
+                    <img src="kod2.svg" alt="kod2" id="kod2">
+                    <img src="kod3.svg" alt="kod3" id="kod3">
+                    <img src="kod4.svg" alt="kod4" id="kod4">
+                    <img src="kod5.svg" alt="kod5" id="kod5">
+                    <img src="kod6.svg" alt="kod6" id="kod6">
+                    <img src="kod5.svg" alt="kod7" id="kod7">
+                </div>
+            </button>
+            <p>Kod QR</p>
+        </section>
+        <section class="witam">
+            <button class="wybor">
+                <div id="more">
+                    <img src="more1.svg" alt="chuj1" id="more1">
+                    <img src="more2.svg" alt="chuj2" id="more2">
+                    <img src="more2.svg" alt="chuj2" id="more3">
+                    <img src="more2.svg" alt="chuj2" id="more4">
+                </div>
+            </button>
+            <p>Więcej</p>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>
